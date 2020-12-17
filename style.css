@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(253, 246, 246); */
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
+    font-size: 2rem;
+    text-shadow: 0px 10px 20px rgb(0, 0, 0, 0.2);
+}
+
+header h2 {
+    padding: 2rem;
+}
+
+#logo {
+    text-decoration: none;
+    color: rgb(201, 198, 198);
+}
+
+.search-form {
+    padding: 1rem;
+    display: flex;
+}
+
+.search-input {
+    font-size: 2rem;
+    padding: 0.7rem;
+    width: 100%;
+    border: none;
+    border: 2px solid rgb(16, 16, 56);
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 7px;
+    outline: none;
+}
+
+.submit-btn {
+    position: relative;
+    left: 5px;
+    border: none;
+    padding: 1rem 1.6rem;
+    border-radius: 4px;
+    box-shadow: 0px 7px 6px rgb(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(16, 16, 56);
+}
+
+.submit-btn:active {
+    background-color: #fff;
+    color: rgb(16, 16, 56);
+    transition: 0.4s ease;
+    transform: scale(0.9);
+}
+
+.gallery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+
+.gallery-info a {
+    color: gray;
+    text-decoration: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.more {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(16, 16, 56);
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    outline: none;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.5);
+}
+
+.more:active {
+    color: rgb(16, 16, 56);
+    background-color: #fff;
+    transform: scale(0.9);
+    transition: 0.4s ease;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    font-size: 1.3rem;
+}
